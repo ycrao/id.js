@@ -1,0 +1,28 @@
+{
+  "name": "idjs",
+  "version": "1.0.0",
+  "description": "node/javascript version for php package douyasi/identity-card",
+  "bin": {
+    "id-parse": "bin/id-parse.js"
+  },
+  "scripts": {
+    "dev": "node example/test.js",
+    "ts-dev": "ts-node example/test.ts"
+  },
+  "main": "index.js",
+  "keywords": [
+    "id",
+    "chinese",
+    "identity"
+  ],
+  "author": "raoyc",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.15.1"
+  },
+  "devDependencies": {
+    "ts-loader": "^4.3.0",
+    "typescript": "^2.8.3",
+    "webpack-cli": "^2.1.3"
+  }
+}
