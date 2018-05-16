@@ -36,8 +36,9 @@ id-parse
 
 ### 数据回显
 
+在终端运行 `id-parse 42032319930606629X` 命令，会回显以下数据：
+
 ```shell
-id.js git:(master) ✗ id-parse 42032319930606629X
 identity card number is 42032319930606629X
 { is_pass: true,
   area:
