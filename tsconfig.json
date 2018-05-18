@@ -5,7 +5,10 @@
         "target": "es5",
         "module": "commonjs",
         "noImplicitAny": true,
-        "rootDir": "./src/"
+        "rootDir": "./src/",
+        "sourceMap": true,
+        "noEmitHelpers": true,
+        "importHelpers": true,
     },
     "include": [
         "src/**/*"

@@ -190,3 +190,4 @@ var IdentityCard = /** @class */ (function () {
     return IdentityCard;
 }());
 exports.IdentityCard = IdentityCard;
+//# sourceMappingURL=id.js.map

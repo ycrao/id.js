@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="../dist/id.js"></script>
-    <title>IdentityCard</title>
+    <script src="js/id.bundle.js"></script>
+    <title>Identity Card Demo</title>
 </head>
 <body>
     <script>
-//var id_1 = require("../src/id");
-var id = new IdentityCard('42032319930606629x');
-console.log(id.info());
+var Id_1 = new IdentityCard();
+var id = new Id_1.IdentityCard('42032319930606629x');
+console.log('identity card number: 42032319930606629x');
+console.log('result: %j', id.info());
     </script>
 </body>
 </html>

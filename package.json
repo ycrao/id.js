@@ -6,23 +6,36 @@
     "id-parse": "bin/id-parse.js"
   },
   "scripts": {
+    "prebuild": "npm run build:clean",
+    "build": "tsc && webpack --config webpack.config.js",
+    "build:webpack": "webpack --config webpack.config.js",
+    "build:tsc": "tsc",
+    "build:clean": "rimraf dist",
+    "tsc-watch": "tsc --watch",
     "dev": "node example/test.js",
     "ts-dev": "ts-node example/test.ts"
   },
-  "main": "index.js",
+  "main": "dist/index.js",
   "keywords": [
     "id",
     "chinese",
-    "identity"
+    "identity",
+    "library"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ycrao/id.js.git"
+  },
+  "homepage": "https://github.com/ycrao/id.js",
   "author": "raoyc",
   "license": "MIT",
   "dependencies": {
-    "commander": "^2.15.1"
+    "commander": "^2.15.1",
+    "rimraf": "^2.6.1"
   },
   "devDependencies": {
-    "ts-loader": "^4.3.0",
+    "ts-loader": "^3.5.0",
     "typescript": "^2.8.3",
-    "webpack-cli": "^2.1.3"
+    "webpack": "^3.8.1"
   }
 }
