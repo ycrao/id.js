@@ -1,25 +1,48 @@
-# id.js
+# id.js [Identity-Card]
 
+---
+
+[![NPM version][npm-badge]][npm-url]
+[![NPM downloads][npm-downloads]][npm-url]
+
+
+[npm-badge]: https://img.shields.io/npm/v/identity-card.svg?style=flat
+[npm-url]: https://www.npmjs.com/package/identity-card
+[npm-downloads]: http://img.shields.io/npm/dm/identity-card.svg?style=flat
 
 身份证校验及其属地查询类库， 是对PHP [douyasi/identity-card](https://github.com/douyasi/identity-card) 包的 `Typescript/Node/Javascript` 实现版本 。
 
 
 ### 安装与使用
 
+使用 `npm` 下载安装：
+
+```
+npm install identity-card
+cd node_modules/identity-card
+```
+
+使用 `git` 下载安装：
+
 ```shell
 git clone https://github.com/ycrao/id.js
 cd id.js
 npm install
+```
+
+使用命令：
+
+```
 npm link
 # 命令行工具
 id-parse
-# 全部编译
+# 编译所有
 npm run build
-# 使用tsc编译
-npm run build:ts
-# 使用webpack编译压缩
+# 使用tsc编译 [会覆盖 dist 目录下 js 文件]
 npm run build:tsc
-# 执行开发测试
+# 使用webpack编译压缩 [会覆盖 id.min.js 文件]
+npm run build:webpack
+# 执行开发测试 [使用 node 和 ts-node 运行示例代码]
 npm run dev
 npm run ts-dev
 ```
@@ -65,6 +88,8 @@ identity card number is 42032319930606629X
 ### 浏览器端使用
 
 已提供浏览器端 `id.min.js` ，请参考 `example/index.html` 示例使用。
+
+![demo](example/img/WX20180518-201359@2x.png)
 
 ```
 <!DOCTYPE html>
