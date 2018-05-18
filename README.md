@@ -1,7 +1,7 @@
 # id.js
 
 
-身份证校验及其属地查询类库， 是对 [douyasi/identity-card](https://github.com/douyasi/identity-card) 类库的 `Typescript/Node/Javascript` 实现版本 。
+身份证校验及其属地查询类库， 是对PHP [douyasi/identity-card](https://github.com/douyasi/identity-card) 包的 `Typescript/Node/Javascript` 实现版本 。
 
 
 ### 安装与使用
