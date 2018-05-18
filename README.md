@@ -11,7 +11,15 @@ git clone https://github.com/ycrao/id.js
 cd id.js
 npm install
 npm link
+# 命令行工具
 id-parse
+# 全部编译
+npm run build
+# 使用tsc编译
+npm run build:ts
+# 使用webpack编译压缩
+npm run build:tsc
+# 执行开发测试
 npm run dev
 npm run ts-dev
 ```
