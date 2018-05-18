@@ -2,7 +2,7 @@ const uglify = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   entry: "./src/id.ts",
-  //devtool: "inline-source-map",
+  // devtool: "inline-source-map",
   module: {
     rules: [
       {
@@ -21,13 +21,11 @@ module.exports = {
   resolve: {
     extensions: [".ts", ".tsx", ".js"]
   },
-  /*
   plugins:[
     new uglify()
   ],
-  */
   output: {
-    filename: "id.bundle.js",
-    path: __dirname + "/example/js"
+    filename: "id.min.js",
+    libraryTarget: "umd"
   }
 };
