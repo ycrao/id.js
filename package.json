@@ -1,5 +1,5 @@
 {
-  "name": "idjs",
+  "name": "identity-card",
   "version": "1.0.0",
   "description": "node/javascript version for php package douyasi/identity-card",
   "bin": {
