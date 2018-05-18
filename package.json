@@ -1,6 +1,6 @@
 {
   "name": "identity-card",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "node/javascript version for php package douyasi/identity-card",
   "bin": {
     "id-parse": "bin/id-parse.js"
@@ -17,10 +17,19 @@
   },
   "main": "dist/index.js",
   "keywords": [
+    "typescript",
+    "id.js",
     "id",
     "chinese",
     "identity",
-    "library"
+    "identity-card",
+    "validation",
+    "library",
+    "中国大陆",
+    "居民身份证",
+    "属地查询",
+    "douyasi",
+    "id-parse"
   ],
   "repository": {
     "type": "git",
