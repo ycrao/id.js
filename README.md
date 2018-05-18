@@ -1,6 +1,4 @@
-# id.js [Identity-Card]
----
-
+# Identity-Card [id.js]
 
 
 [![NPM version][npm-badge]][npm-url]
@@ -14,6 +12,9 @@
 >   身份证校验及其属地查询类库， 是对PHP [douyasi/identity-card](https://github.com/douyasi/identity-card) 包的 `Typescript/Node/Javascript` 实现版本 。
 
 ![demo](example/img/WX20180518-201359.png)
+
+
+PS : 本来包名想叫 `idjs` 或 `id.js` 的，但是 `npm` 有相似包名不允许上传，所以干脆跟 `php` 包名相同了。
 
 
 ### 安装与使用
