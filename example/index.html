@@ -4,27 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="../id.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style type="text/css">
+        .jsonview{font-family:monospace;font-size:1.1em;white-space:pre-wrap}.jsonview .prop{font-weight:700;text-decoration:none;color:#000}.jsonview .null,.jsonview .undefined{color:red}.jsonview .bool,.jsonview .num{color:#00f}.jsonview .string{color:green;white-space:pre-wrap}.jsonview .string.multiline{display:inline-block;vertical-align:text-top}.jsonview .collapser{position:absolute;left:-1em;cursor:pointer}.jsonview .collapsible{transition:height 1.2s;transition:width 1.2s}.jsonview .collapsible.collapsed{height:.8em;width:1em;display:inline-block;overflow:hidden;margin:0}.jsonview .collapsible.collapsed:before{content:"…";width:1em;margin-left:.2em}.jsonview .collapser.collapsed{transform:rotate(0)}.jsonview .q{display:inline-block;width:0;color:transparent}.jsonview li{position:relative}.jsonview ul{list-style:none;margin:0 0 0 2em;padding:0}.jsonview h1{font-size:1.2em}
+    </style>
+    <script type="text/javascript" src="../id.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jsonview.min.js"></script>
     <title>Identity Card Demo</title>
 </head>
 <body>
-    <div class="col-md-6 offset-md-3">
-        <h3>身份证校验及其属地查询</h3>
-        <form action="" method="get">
-            <div class="form-group">
-                <input class="form-control" type="text" value="" name="identity" id="identity" minlength="18" size="20" />
+        <div class="container">
+            <div class="col-md-6 offset-md-3">
+                <h3身份证校验及其属地查询</h3>
+                <form action="" method="get">
+                    <div class="form-group">
+                        <input class="form-control" type="text" value="" name="identity" id="identity" minlength="18" maxlength="18" />
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-dark">提交</button>
+                    </div>
+                </form>
+                <div class="json_viewer bg-light">
+                </div>
             </div>
-            <div class="form-group">
-                <button type="submit" class="btn btn-primary">提交</button>
-            </div>
-        </form>
-        <div class="result">
-            <pre>
-
-            </pre>
         </div>
-    </div>
+
     <script>
 function request(key, val) {
     var val = (arguments[1] === undefined) ? null : arguments[1];
@@ -45,12 +50,12 @@ function request(key, val) {
 var IdCard = request('identity', '42032319930606629x');
 document.getElementById('identity').value = IdCard;
 
-var area = require('Area');
-var Id = IdentityCard;
-var id = Id.IdentityCard(IdCard);
+var id = new IdentityCard(IdCard);
 console.log('identity card number:', IdCard);
 console.log('result: %j', id.info());
-
+$(function() {
+    $('.json_viewer').JSONView(JSON.stringify(id.info()));
+});
     </script>
 </body>
 </html>

@@ -1,3 +1,9 @@
 {
-  "presets": ["env"]
+  "plugins": ["babel-plugin-transform-runtime"],
+  "presets": [["env", {
+      "targets": {
+        "chrome": 52,
+        "loose": true
+      }
+    }]]
 }
