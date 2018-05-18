@@ -13,8 +13,7 @@
     "build:clean": "rimraf dist",
     "tsc-watch": "tsc --watch",
     "dev": "node example/test.js",
-    "ts-dev": "ts-node example/test.ts",
-    "build:web": "browserify dist/id.js -o id.min.js"
+    "ts-dev": "ts-node example/test.ts"
   },
   "main": "dist/index.js",
   "keywords": [
@@ -27,35 +26,14 @@
     "type": "git",
     "url": "git+https://github.com/ycrao/id.js.git"
   },
-  "browserify": {
-    "transform": [
-      [
-        "babelify",
-        {
-          "presets": [
-            "latest"
-          ]
-        }
-      ]
-    ]
-  },
   "homepage": "https://github.com/ycrao/id.js",
   "author": "raoyc",
   "license": "MIT",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-latest": "^6.24.1",
-    "babelify": "^8.0.0",
     "commander": "^2.15.1",
     "rimraf": "^2.6.1",
     "ts-loader": "^3.5.0",
     "typescript": "^2.8.3",
     "webpack": "^3.8.1"
-  },
-  "dependencies": {
-    "browserify": "^16.2.2"
   }
 }
