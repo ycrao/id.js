@@ -62,6 +62,40 @@ identity card number is 42032319930606629X
   constellation: '双子座' }
 ```
 
+### 浏览器端使用
+
+已提供浏览器端 `id.min.js` ，请参考 `example/index.html` 示例使用。
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <script type="text/javascript" src="../id.min.js"></script>
+</head>
+<body>
+    <script>
+    var IdCard = '42032319930606629x';
+    var id = new IdentityCard(IdCard);
+    console.log('identity card number:', IdCard);
+    console.log('result: %j', id.info());
+    </script>
+</body>
+</html>
+```
+
+`IdentityCard` 类暴露以下公共方法，注意，请在调用 `validate()` 为 `true` 之后，再调用其它获取信息接口。
+
+ - validate() : 校验结果
+ - info() : 所有信息组合
+ - area() : 归属地信息
+ - gender() : 性别
+ - age() : 年龄
+ - birthday() : 生日
+ - constellation() : 星座
+
+
 ### 其他版本实现
 
 - PHP实现版本 [douyasi/identity-card](https://github.com/douyasi/identity-card)
