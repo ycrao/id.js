@@ -1,16 +1,19 @@
 # id.js [Identity-Card]
-
 ---
+
+
 
 [![NPM version][npm-badge]][npm-url]
 [![NPM downloads][npm-downloads]][npm-url]
-
 
 [npm-badge]: https://img.shields.io/npm/v/identity-card.svg?style=flat
 [npm-url]: https://www.npmjs.com/package/identity-card
 [npm-downloads]: http://img.shields.io/npm/dm/identity-card.svg?style=flat
 
-身份证校验及其属地查询类库， 是对PHP [douyasi/identity-card](https://github.com/douyasi/identity-card) 包的 `Typescript/Node/Javascript` 实现版本 。
+
+>   身份证校验及其属地查询类库， 是对PHP [douyasi/identity-card](https://github.com/douyasi/identity-card) 包的 `Typescript/Node/Javascript` 实现版本 。
+
+![demo](example/img/WX20180518-201359.png)
 
 
 ### 安装与使用
@@ -88,8 +91,6 @@ identity card number is 42032319930606629X
 ### 浏览器端使用
 
 已提供浏览器端 `id.min.js` ，请参考 `example/index.html` 示例使用。
-
-![demo](example/img/WX20180518-201359@2x.png)
 
 ```
 <!DOCTYPE html>
