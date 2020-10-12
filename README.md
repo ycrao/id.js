@@ -3,11 +3,13 @@
 
 [![NPM version][npm-badge]][npm-url]
 [![NPM downloads][npm-downloads]][npm-url]
+[![Jsdelivr cdn][jsdelivr-badge]][jsdelivr-url]
 
 [npm-badge]: https://img.shields.io/npm/v/identity-card.svg?style=flat
 [npm-url]: https://www.npmjs.com/package/identity-card
 [npm-downloads]: http://img.shields.io/npm/dm/identity-card.svg?style=flat
-[![](https://data.jsdelivr.com/v1/package/npm/identity-card/badge)](https://www.jsdelivr.com/package/npm/identity-card)
+[jsdelivr-badge]: https://data.jsdelivr.com/v1/package/npm/identity-card/badge?style=rounded
+[jsdelivr-url]: https://www.jsdelivr.com/package/npm/identity-card
 
 
 >   身份证校验及其属地查询类库， 是对PHP [douyasi/identity-card](https://github.com/douyasi/identity-card) 包的 `Typescript/Node/Javascript` 实现版本 。
