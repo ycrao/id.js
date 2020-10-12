@@ -1,6 +1,6 @@
 {
   "name": "identity-card",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "node/javascript version for php package douyasi/identity-card",
   "bin": {
     "id-parse": "bin/id-parse.js"
