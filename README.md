@@ -134,4 +134,3 @@ identity card number is 42032319930606629X
 ### 联系作者
 
 >   Email: raoyc2009#gmail.com （请修改改`#` 为`@`）  
->   QQ群：260655062  
